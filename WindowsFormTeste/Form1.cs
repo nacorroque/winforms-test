@@ -22,10 +22,11 @@ namespace WindowsFormTeste
             string nome = textBox1.Text;
             string ano = textBox6.Text;
 
-            //if (nome.Length > 0 && ano.Length > 0)
+            if (nome.Length > 0 && ano.Length > 0)
             {                                                        
                 string mensagem = string.Format("Olá {0}, o ano informado foi {1}", nome, ano);
-                MessageBox.Show(mensagem, "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); }
+                MessageBox.Show(mensagem, "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1); 
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -45,8 +46,6 @@ namespace WindowsFormTeste
             int idade = DateTime.Today.Year - ano;
 
             MessageBox.Show($"Sua idade é {idade}", "Mensagem", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-        
-
         }
     }
 }
